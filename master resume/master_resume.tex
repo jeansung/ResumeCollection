@@ -1,0 +1,137 @@
+% Jean Sung
+% Summer 2014
+% Resume Template / Master Resume 
+
+% How to use: either add new things or customize sections
+% for a resume for a special occassion then commit and 
+% sync
+
+\documentclass[11.5pt]{article}
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage[margin= 0.5 in]{geometry}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+\normalsize
+
+% resume header details 
+\newcommand{\name}{\large\textbf{Jean Sung}}
+\newcommand{\addr}{340 E. Foothill Blvd, Claremont, CA 91711 }
+\newcommand{\email}{\url{jsung@cs.hmc.edu}}
+\newcommand{\phone}{(206)-734-5538 }
+
+% shortcuts 
+\newcommand{\headerdot}{  $\bullet$  }
+\newcommand{\vb}{ $\mid$ }
+\newcommand{\sectionNL}{\\[2pt]}
+\newcommand{\customtab}{$\hspace{10pt}\bullet\hspace{2pt}$}
+\newcommand{\customtabinline}{$\hspace{17pt}$}
+\begin{document}
+
+% Contact Information 
+\begin{center}
+\name \\
+\addr \headerdot \email \headerdot \phone
+\end{center}
+
+% % Information about Indent for Date % %
+% 8.5 inch wide paper
+% 8.5 - margin - date Indent = indent for dates [6.5]
+% margin = 0.5 inches
+% date = 1 inch 
+
+% Education
+% use 2 \\ to sepparte entries
+\begin{tabbing}
+\hspace*{6.5in}\= \kill
+{\large \textbf{Education} } \> \sectionNL
+B.S. Computer Science (expected) \> May 2016 \\
+Harvey Mudd College, Claremont, CA \> \\ \\
+
+High School Diploma \> June 2012 \\
+Woodinville High School, Woodinville, WA \> \\
+\textit{Valedictorian, 4.0 GPA}
+\end{tabbing}
+
+
+% Relevant Coursework
+\begin{flushleft}
+{\large \textbf{Relevant Coursework}} \sectionNL
+Software Development \vb Domain Specific Languages \vb Computer Systems \vb Discrete Mathematics \\
+Data Structures/Program Development \vb Image Processing \vb Programming Practicum  \\
+Principles of CS \vb Introduction to CS \vb Linear Algebra/Differential Equations \vb Multivariable Calculus \\
+Mathematics of Voting \vb Introduction to Linguistics \vb Physical Chemistry 
+\end{flushleft}
+
+% Awards and Honors 
+\begin{tabbing}
+\hspace*{6.5in}\= \kill
+{\large \textbf{Awards and Honors} } \> \sectionNL
+Harvey S. Mudd Merit Award (Scholarship) \> 9/12- Present \\
+Dean's List \> Fall 2013 \\
+Commendation Letter, Department of Chemistry \> Fall 2012 \\
+Superior Academic Performance \> Fall 2012
+\end{tabbing}
+
+%Skills
+\begin{flushleft}
+{\large \textbf{Skills}} \sectionNL
+\textit{Programming:} C++, Java, Python, Racket, Prolog, MatLab, Unix/ Command Line, C, x86 Assembly\\
+\textit{Markup:} HTML/CSS, LaTeX \\
+\textit{Version Control:} Git, Subversion\\
+\textit{iOS Development:} Objective C, iOS, Cocoa Touch Framework, Cocos 2D, Box2D
+\end{flushleft}
+
+% Projects (future section) 
+% Research Experience
+\begin{tabbing} 
+\hspace*{6.5in}\= \kill
+{\large \textbf{Research Experience} } \> \sectionNL
+Department of Computer Science, Harvey Mudd College, Claremont CA \>5/13 - 7/13 \\
+\customtab Helped develop and publish educational iPad games for middle school students \\
+\customtab Worked with iOS and the Model-View-Controller (MVC) framework \\
+\customtab Primary game: HammyCoaster, free on the iTunes Store
+\end{tabbing}
+	
+% Work Experience
+\begin{tabbing} 
+\hspace*{6.5in}\= \kill
+{\large \textbf{Work Experience} } \> \sectionNL
+Tutor and Grader, Computer Science Department, Claremont, CA \>9/13 -Present \\
+\customtab Assisted in classes including: Data Structures/Program Development, Principles of CS,\\ \customtabinline Software Development,  Introduction to CS\\ 
+\newline
+Grader, Chemistry Department, Claremont, CA \>9/13 -12/13 \\
+\customtab Graded notebooks freshman chemistry laboratory \\
+Tutor, Upward Bound at Harvey Mudd College, Claremont CA  \>9/12 -5/13 \\
+
+\customtab Worked with underprivileged high school students to cultivate study skills necessary to reach and \\ \customtabinline succeed in college \\
+
+Assistant, Kumon Learning Center, Woodinville, WA \>Summer 2012 \\
+\customtab Taught basic reading skills to early learners and graded homework for elementary aged students
+\end{tabbing}
+
+% Volunteer Experience 
+\begin{tabbing} 
+\hspace*{6.5in}\= \kill
+{\large \textbf{Volunteer Experience} } \> \sectionNL
+Math Olympiad Coach, Chaparral Elementary School \>9/12-2/13 \\
+\customtab Administered practice tests and tutored to prepare 6th graders for local division MOEMS Contests \\
+\newline
+Science Bus Teacher \>9/12 – 12/12 \\
+\customtab Led science lessons for 6th grade students at local elementary schools to explore concepts in \\ \customtabinline physics and chemistry.  \\
+
+Counselor, Bothell YMCA \>9/10-8/12 \\
+\customtab Led and organized activities for children monthly from 5pm-12am \\
+\customtab Created fliers for the marketing department that promoted YMCA programs and events
+\end{tabbing}
+
+% Activities 
+\begin{tabbing}
+\hspace*{6.5in}\= \kill
+{\large \textbf{Activities} } \> \sectionNL
+W-ACM Secretary (local chapter) \> 4/14-Present \\
+Dorm Social Representative \> 9/13-Present \\
+Cross Country \> 2011-2012 \\
+Gymnastics \> 2001-Present
+\end{tabbing}
+
+\end{document}
