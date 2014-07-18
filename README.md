@@ -1,5 +1,7 @@
 Resume Template 
+
 Created by Jean Sung
+
 Summer 2014
 
 Why should I put my resume in LaTeX?? 
