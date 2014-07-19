@@ -1,0 +1,9 @@
+# Emacs junk
+\#*#
+*~
+
+# TeX junk
+*aux
+*log
+*out
+*pdf
