@@ -13,7 +13,7 @@
 %- CS 111, CS 121, CS 189 project 
 %- change the heading into github 
 
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \usepackage[margin= 0.5 in]{geometry}
 \usepackage{hyperref}
@@ -21,27 +21,31 @@
 \normalsize
 
 % resume header details 
-\newcommand{\selfName}{\huge\textbf{Jean Sung}}
-\newcommand{\addrA}{\normalsize 340 E. Foothill Blvd, }
-\newcommand{\addrB}{\normalsize Claremont, CA 91711}
-\newcommand{\email}{\url{jsung@cs.hmc.edu}}
+\newcommand{\selfName}{\LARGE\textbf{JEAN SUNG}}
+\newcommand{\addrA}{\small 340 E. Foothill Blvd, }
+\newcommand{\addrB}{\small Claremont, CA 91711}
+\newcommand{\email}{\small{jsung@cs.hmc.edu}}
 \newcommand{\phone}{(206)-734-5538 }
+\newcommand{\tildeText}{\raise.17ex\hbox{$\scriptstyle\sim$}}
+\newcommand{\website}{\small{http://cs.hmc.edu/\tildeText jsung}}
 
 % shortcuts 
 \newcommand{\headerdot}{  $\bullet$  }
 \newcommand{\vb}{ $\mid$ }
-\newcommand{\sectionNL}{\\[2pt]}
-\newcommand{\customtab}{$\hspace{10pt} - \hspace{2pt}$}
+\newcommand{\sectionNL}{\\[-2pt]}
+\newcommand{\customtab}{$\hspace{10pt} \bullet \hspace{2pt}$}
 \newcommand{\customtabinline}{$\hspace{23pt}$}
 
 \begin{document}
-% Contact Information 
 
+% Contact Information 
 \begin{center}
 \selfName \\
-\addrA \addrB \headerdot \email \headerdot \phone
+ \addrA \addrB \headerdot \email \headerdot \phone \headerdot \website
 \end{center}
 
+% Force smaller spacing in between
+\vspace{-15pt}
 %\begin{flushleft}
 %\begin{tabular}{l l l}
 %\selfName & \addrA & \email \\
@@ -59,9 +63,10 @@
 % use 2 \\ to sepparte entries
 \begin{tabbing}
 \hspace*{6.5in}\= \kill
-{\textbf{Education} } \> \sectionNL
+{\textbf{EDUCATION} } \> \sectionNL
+%\vspace{-2pt}
 Harvey Mudd College, Claremont, CA \> \\
-B.S. Computer Science - Major GPA: 3.0  \hspace{200pt} Expected May 2016 \> \\ \\
+B.S. Computer Science - Major GPA: 3.0   \>Expected May 2016  \\ \\
 
 
 Woodinville High School, Woodinville, WA \> \\
@@ -71,10 +76,9 @@ High School Diploma (Valedictorian) - GPA: 4.0 \> June 2012
 
 % Relevant Coursework
 \begin{flushleft}
-{\textbf{Relevant Coursework}} \sectionNL
-Software Development \vb Domain Specific Languages \vb Programming Practicum \\
-Computer Systems \vb Discrete Mathematics \vb Data Structures/Program Development \\
-Image Processing \vb Linear Algebra/Differential Equations \vb Multivariable Calculus \\
+{\textbf{COURSEWORK}} Software Development \vb Domain Specific Languages \vb Programming Practicum \\
+Computer Systems \vb Discrete Mathematics \vb Data Structures/Program Development \vb Image Processing 
+Linear Algebra \vb Differential Equations \vb Multivariable Calculus \vb Physical Chemistry\\
 
 % \vb Principles of CS
 % \vb Introduction to CS
@@ -85,35 +89,56 @@ Image Processing \vb Linear Algebra/Differential Equations \vb Multivariable Cal
 
 % Awards and Honors
 \begin{flushleft}
-{\textbf{Awards and Honors}} \sectionNL
-Harvey S. Mudd Merit Award (Scholarship) \vb Dean's List \\
-Commendation Letter, Department of Chemistry \vb Superior Academic Performance
+{\textbf{AWARDS \& HONORS}} Harvey S. Mudd Merit Award (Scholarship)\vb Dean's List \\
+Superior Academic Performance \vb Commendation Letter, Department of Chemistry 
 \end{flushleft} 
 
 %Skills
 \begin{flushleft}
-{\textbf{Skills}} \sectionNL
+{\textbf{SKILLS}} \sectionNL
 \textit{Programming:} C++, Java, Python, Racket, Prolog, MATLAB, C, x86 Assembly\\
 \textit{Markup:} HTML/CSS, LaTeX \\
 \textit{Tools:} Git, Subversion, Unix/Command Line \\
 \textit{iOS Development:} Objective-C, MVC framework, Cocoa Touch Framework, Cocos 2D %, Box2D
 \end{flushleft}
 
-% Projects, in progress 
-\begin{flushleft}
-\textbf{Side Projects:} Wake Me When (Android app, in progress), LaTex Resume Template 
-\end{flushleft}
+% CS Projects
+\begin{tabbing} 
+\hspace*{6.5in}\= \kill
+{\textbf{PROJECTS} } \> Fall 2014 \sectionNL
+
+\textbf{Wake Me When} \vb Designed an app that is an alarm clock based on a device's distance from a set location \\
+\customtab (Currently) Implementing an Android application that ties together Google Maps API and native \\ 
+\customtabinline alarm clock functionality \\
+
+\textbf{Piconot} \vb  Wrote a language that improved the readability of the syntax of Picobot, a language that specifies  \\
+\customtabinline a robot's state through rules about its movements and surroundings \\
+\customtab Implemented as an Internal Domain Specific Language in Scala \\
+ 
+\textbf{Sudoku} \vb Designed an iOS compatible software architecture for the game of Sudoku \\
+\customtab Implemented and tested game in Objective-C as iPad application \\
+
+\textbf{LaTex Resume Template} \vb Designed a template Tex File to be used in generating resumes
+
+%wrote a langauge that improved the readiability of the syntax of 
+%Picobot, a langauge that specifies a robot's state through rules about its movements and surrondings 
+%Rewrote a langauge that wraps the functionality of a robot state loc
+%Sudoku \> \\
+%designed, implemented and tested a suduko game written in objective C for iPad
+%Latex things\> \\
+%designed a template tex file with different types of sections corresponding to common resume sections
+
+\end{tabbing} 
+
 
 
 % Research Experience
 \begin{tabbing} 
 \hspace*{6.5in}\= \kill
-{\textbf{Research Experience} } \> \sectionNL
+{\textbf{RESEARCH EXPERIENCE} } \> \sectionNL
 Department of Computer Science, Harvey Mudd College, Claremont CA \>Summer 2014 \\
-\customtab Applied a programming language approach to making software tools \\
-\customtabinline more extensible and reusable by domain experts \\
-\customtab Created a physics simulation to help students draw and visualize force vectors \\
- \customtabinline in Java with the jMonkey game engine  \\
+\customtab Applied a programming language approach to making software tools more extensible and reusable \\ by domain experts \\
+\customtab Created a physics simulation to help students draw and visualize force vectors in Java with jMonkey\\
 
 Department of Computer Science, Harvey Mudd College, Claremont CA \>Summer 2013 \\
 \customtab Helped develop and publish educational iPad games for middle school students \\
@@ -125,25 +150,27 @@ Department of Computer Science, Harvey Mudd College, Claremont CA \>Summer 2013 
 % Additional Experience 
 \begin{tabbing} 
 \hspace*{6.5in}\= \kill
-{\textbf{Additional Experience } } \> \sectionNL
-Assistant, Office of Institutional Diversity, Claremont, CA \>9/14 -Present \\
-\customtab Initiated and implemented office task automation projects, including revamping \\
-\customtabinline the RSVP system with Google Apps \\
+{\textbf{ADDITIONAL EXPERIENCE } } \> \sectionNL
+Assistant, Office of Institutional Diversity, Claremont, CA \>Fall 2014 -Present \\
+\customtab Initiated and implemented office task automation projects, including revamping the RSVP system \\ with Google Apps \\
 \customtab Helped plan events that promoted awareness of social justice issues \\
 
 Programming Instructor, iD Tech Summer Camps, Seattle, WA \> Summer 2014 \\
 \customtab Developed lesson plans for Scratch and Java classes \\
 \customtab Taught introductory programming to  middle school students\\
 
-Tutor and Grader, Computer Science Department, Claremont, CA \>9/13 -Present \\ %
+Tutor and Grader, Computer Science Department, Claremont, CA \> Fall 2013 -Present \\ %
 \customtab Assisted in introductory and upper level courses \\
 \customtab Held tutoring hours for students and graded homeworks
 %Tutor, Upward Bound at Harvey Mudd College, Claremont CA  \>9/12 -5/13 \\
 %\customtab Worked with underprivileged high school students to cultivate study skills necessary to reach and \\ \customtabinline succeed in college \\
 \end{tabbing}
 
-% Leadership - WACM, Blood drive coordinater, 
-\flushleft {\textbf{Leadership:} ACM-W Officer (local chapter) \vb Dorm Social Representative \vb Blood Drive Coordinator
+% Leadership 
+\flushleft {\textbf{LEADERSHIP} ACM-W Officer (local chapter) \vb Dorm Social Representative \vb Blood Drive Coordinator
+% Fun
+%\textbf{}\flushleft {\textbf{Fun:} Cross-Country Running \vb Gymnastics \vb Springboard Diving
+
 
 % Activities 
 %{\textbf{Extracurricular:} Running \vb Gymnastics \vb Springboard Diving 
