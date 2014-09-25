@@ -6,6 +6,7 @@
 *aux
 *log
 *out
+*gz
 master_resume\*pdf
 resume_template\*pdf
-*.syntecx.gz
+resume_template\*gz
