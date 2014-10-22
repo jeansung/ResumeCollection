@@ -1,16 +1,6 @@
-
 % Jean Sung
 % Resume Template / Master Resume 
 
-% How to use: either add new things or customize sections
-% for a resume for a special occassion then commit and 
-% sync
-
-
-% % TO DO for FALL 2014 Version!
-% Later in fall 2014: 
-%- CS 111, CS 121, CS 189 project 
-%- change the heading into github 
 
 \documentclass[11pt]{article}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
@@ -20,14 +10,14 @@
 \normalsize
 
 % resume header details 
-\newcommand{\selfName}{\LARGE\textbf{JEAN SUNG}}
+\newcommand{\selfName}{\Huge\textbf{JEAN SUNG}}
 \newcommand{\addrA}{\small 340 E. Foothill Blvd, }
 \newcommand{\addrB}{\small Claremont, CA 91711 }
 \newcommand{\email}{\small{jsung@cs.hmc.edu }}
-\newcommand{\phone}{(206)-734-5538 }
+\newcommand{\phone}{\small (206)-734-5538 }
 \newcommand{\tildeText}{\raise.17ex\hbox{$\scriptstyle\sim$}}
-\newcommand{\websitedisplaytext}{http://cs.hmc.edu/\tildeText jsung }
-\newcommand{\website}{\href{http://cs.hmc.edu/~jsung}{\websitedisplaytext}}
+\newcommand{\websitedisplaytext}{\small http://cs.hmc.edu/\tildeText jsung }
+\newcommand{\website}{\small\href{http://cs.hmc.edu/~jsung}{\websitedisplaytext}}
 
 
 % shortcuts 
@@ -43,10 +33,15 @@
 \begin{document}
 
 % Contact Information 
-\begin{center}
-\selfName \\
- \addrA \addrB \headerdot \email \headerdot \phone \headerdot \website
-\end{center}
+\begin{flushleft}
+\begin{tabular}{r @{\hspace{9cm}}r}
+& \rightAlign \phone \\
+& \rightAlign \email \\
+\selfName & \rightAlign \website
+\end{tabular}
+
+\hrulefill
+\end{flushleft}
 
 % Force smaller spacing in between
 \vspace{-10pt}
@@ -105,10 +100,10 @@ Data Structures \& Program Development \vb Linear Algebra \& Differential Equati
  
 \textbf{Sudoku} \rightAlign Fall 2014 \\
 \JudgeNudge Designed an iOS compatible software architecture for the game of Sudoku \\
-\customtab Implemented and tested game in Objective-C as iPad application \\
+\customtab Implemented and tested game in Objective-C as iPad application 
 
-\textbf{\LaTeX \space Resume Template} \rightAlign Summer 2014 \\
-\JudgeNudge Designed a template \LaTeX \space File to be used in generating resumes
+%\textbf{\LaTeX \space Resume Template} \rightAlign Summer 2014 \\
+%\JudgeNudge Designed a template \LaTeX \space File to be used in generating resumes
 \end{flushleft}
 
 
