@@ -1,29 +1,30 @@
 % Jean Sung
 % Resume Template / Master Resume 
 
-
-\documentclass[11pt]{article}
+\documentclass[11.5pt]{article}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \usepackage[margin= 0.5 in]{geometry}
 \usepackage{hyperref}
+\usepackage{fix-cm}
 \pagenumbering{gobble}
 \normalsize
 
 % resume header details 
-\newcommand{\selfName}{\Huge\textbf{JEAN SUNG}}
+\newcommand{\selfName}{\textbf{\fontsize{30}{30}\selectfont JEAN SUNG }}
 \newcommand{\addrA}{\small 340 E. Foothill Blvd, }
 \newcommand{\addrB}{\small Claremont, CA 91711 }
-\newcommand{\email}{\small{jsung@cs.hmc.edu }}
-\newcommand{\phone}{\small (206)-734-5538 }
+\newcommand{\email}{\large {jsung@cs.hmc.edu }}
+\newcommand{\phone}{\large (206)-734-5538 }
 \newcommand{\tildeText}{\raise.17ex\hbox{$\scriptstyle\sim$}}
-\newcommand{\websitedisplaytext}{\small http://cs.hmc.edu/\tildeText jsung }
+\newcommand{\websitedisplaytext}{\large http://cs.hmc.edu/\tildeText jsung }
 \newcommand{\website}{\href{http://cs.hmc.edu/~jsung}{\websitedisplaytext}}
+\newcommand{\wrapTitle}[1]{{\sectionNL \textbf{\Large #1}} \sectionNL}
 
 
 % shortcuts 
 \newcommand{\headerdot}{  $\bullet$  }
 \newcommand{\vb}{ $\mid$ }
-\newcommand{\sectionNL}{\\[-2pt]}
+\newcommand{\sectionNL}{~\\[1pt]}
 \newcommand{\customtab}{$\hspace{10pt} \bullet \hspace{2pt}$}
 \newcommand{\customtabinline}{$\hspace{23pt}$}
 \newcommand{\HMC}{HMC}
@@ -36,38 +37,41 @@
 \begin{center}
 \selfName\\
 \phone \vb 
-\addrA \addrB \vb
+%\addrA \addrB \vb
 \email \vb
 \website
 
 \hrulefill
 \end{center}
 
-% Force smaller spacing in between name and first element on page 
-\vspace{-10pt}
+
+
 
 % Education
 \begin{flushleft}
-{\textbf{EDUCATION}}  \sectionNL
+\wrapTitle{EDUCATION}
 Harvey Mudd College (\HMC), Claremont, CA \rightAlign Expected May 2016  \\
-B.S. Computer Science - Major GPA: 3.4   \\~\\
-Woodinville High School, Woodinville, WA \rightAlign June 2012 \\
-High School Diploma (Valedictorian) - GPA: 4.0 
+B.S. Computer Science - Major GPA: 3.4   \\
 \end{flushleft}
+
+% Education
+%Woodinville High School, Woodinville, WA \rightAlign June 2012 \\
+%High School Diploma (Valedictorian) - GPA: 4.0 
 
 % Relevant Coursework
 \begin{flushleft}
-{\textbf{COURSEWORK}} \sectionNL
-Advanced Algorithms (Fall 2015)
-\vb Artificial Intelligence (Fall 2015) 
-\vb Software Development \\
+\wrapTitle{COURSEWORK}
+Advanced Algorithms 
+\vb Artificial Intelligence 
+\vb Data Structures 
+\vb Domain Specific Languages\\
 Digital Electronics \& Comp. Engineering
-\vb Data Structures \& Program Development
-\vb Programming Practicum \\
-Domain Specific Languages
 \vb Image Processing  
-\vb Linear Algebra \& Differential Equations II
-%\vb Multivariable Calculus  \\
+\vb Linear Algebra \& Diff. Eqs. II
+
+% \& Program Development
+% \vb Programming Practicum \\
+% \vb Software Development
 % \vb Computability \& Logic
 % \vb Systems Engineering
 % \vb Discrete Mathematics
@@ -89,7 +93,7 @@ Domain Specific Languages
 
 %Skills
 \begin{flushleft}
-{\textbf{SKILLS}} \sectionNL
+\wrapTitle{SKILLS}
 \textit{Languages:} Python, Java, C++, MATLAB, C, Objective-C, Go, \LaTeX \\
 \textit{Tools:} Git, SVN, Unix/Command Line, Xcode, Eclipse \\ %, Mathematica \\
 \textit{Software Development:} Agile methods, User Testing, MVC framework
@@ -104,38 +108,41 @@ Domain Specific Languages
 
 % Experience
 \begin{flushleft}
-{\textbf{EXPERIENCE}} \sectionNL
-\textbf{Project Manager}, Laserfiche-HMC Clinic \rightAlign Fall 2015 \\ 
-\customtab Team leader of corporate sponsored capstone project: Simple Real Time Data Analysis System \\ 
-\textbf{Software Engineering Intern}, zulily \rightAlign Summer 2015 \\
-\customtab Conducted feasibility research on a price prediction model \\
-\customtab Presented results to manager and director that resulted in saved company resources \\
+\wrapTitle{EXPERIENCE}
+\textbf{Project Manager for Real-Time Data Analysis System}, Laserfiche-HMC Clinic \rightAlign Fall 2015-Present \\ 
+\customtab Building a data warehouse system to handle flexible unstructured data \\
+\customtab Developing trend analysis algorithms to work across different types of data \\
+\textbf{Software Engineering Intern for Personalization and Relevancy Team}, zulily \rightAlign Summer 2015 \\
+\customtab Conducted feasibility research on a price prediction model that resulted in saved company resources \\
 \customtab Designed, implemented, tracked results for several experiments involving novel ways of arranging the site \\
-\customtab Worked with Google BigQuery, Python with Numpy and Pandas, Go and Java \\
 
 \textbf{Programming Languages Researcher}, \HMC \rightAlign Summer 2014 \\
-\customtab Applied a programming language approach to making software tools \\
 \customtab Created a physics simulator to help students draw and visualize force vectors in Java with jMonkey\\
 \customtab Presented work at the \textit{CCSC Southwest Region Conference}, Awarded 3rd place for poster 
 
 \textbf{Educational iPad App Developer}, \HMC \rightAlign Summer 2013 \\
 \customtab Re-factored, added new features to, and published educational iPad apps for middle school students \\
-\customtab Primary app: HammyCoaster, free on the iTunes Store \\
+\customtab Primary game, Hammy Coaster available at \url{https://itunes.apple.com/app/hammycoaster/id674765438} \\
 \customtab Presented work at the \textit{Celebration of Women in Computing in Southern California Conference }
 \end{flushleft}
 
+% zulily
+%\customtab Presented results to manager and director that resulted in saved company resources \\
+
+% Summer 2014
+% \customtab Applied a programming language approach to making software tools \\
+
 % CS Projects
 \begin{flushleft}
-{\textbf{PROJECTS}}  \sectionNL 
-\textbf{Sum Plus Plus} \rightAlign Fall 2014 \\
-\customtab Created a domain specific language to better express weighed sums with custom constraints \\
+\wrapTitle{PROJECTS}
+\textbf{Sum Plus Plus} (\url{http://jeansung.github.io/SumPlusPlus/}) \rightAlign Fall 2014 \\
+\customtab Created a domain specific language to more cleanly express weighed sums with custom constraints \\
 \customtab Designed a translation suite for English rules to Excel formulas \\
 
-\textbf{Pipe Dream!},  \href{https://itunes.apple.com/us/app/pipe-dream!/id947630499?mt=8}{free download} from iTunes Store \rightAlign Fall 2014 \\
+\textbf{Pipe Dream!} (\url{https://itunes.apple.com/us/app/pipe-dream!/id947630499})  \rightAlign Fall 2014 \\
 \customtab Created an educational iPad game to teach middle school students about computer security\\
 \customtab Gained experience in agile development process, teamwork, architecture design and user testing \\
-\customtab Winner of the 2015 CS Department Award for Best Project of the year 
-
+\customtab Winner of the 2015 Computer Science Department Wing Tam Award for Best Software Development Project 
 %\textbf{Wake Me When}\\
 %\customtab Designed an app that is an alarm clock based on a user's distance from a set location \\
 %\customtab Implemented an Android application using Google Maps API and native alarm clock functionality \\
@@ -155,24 +162,35 @@ Domain Specific Languages
 
 % Additional Experience 
 \begin{flushleft}
-{\textbf{ADDITIONAL EXPERIENCE } } \sectionNL
+\wrapTitle{ADDITIONAL EXPERIENCE}
+\textbf{Volunteer Lead Instructor for Girls Who Code} \rightAlign Fall 2014 -Present \\ 
+\customtab Preparing and teaching weekly lessons on CS fundamentals for 20 middle school students\\
+\textbf{Head Computer Science Grader and Tutor}, \HMC \rightAlign Fall 2013 -Present \\ 
 \textbf{Intern for Office of Institutional Diversity},\HMC \rightAlign Fall 2014 -Spring 2015 \\
 \customtab Initiated and implemented office task automation projects\\
 \customtab Streamlined the RSVP system with Google Apps, saving one hour of staff time per event  \\
 \customtab Helped plan events that promoted awareness of social justice issues \\
+\textbf{Java and Scratch Programming Instructor}, iD Tech Summer Camps \rightAlign Summer 2014 \\
+\customtab Developed lesson plans and taught introductory programming to  middle school students\\
 
-\textbf{Computer Science Grader \& Tutor}, \HMC \rightAlign Fall 2013 -Present \\ %
-\customtab Held tutoring hours for students and graded homeworks
 
-%\textbf{Java \& Scratch Programming Instructor}, iD Tech Summer Camps \rightAlign Summer 2014 \\
-%\customtab Developed lesson plans and taught introductory programming to  middle school students\\
+% Description for grutoring
+%\customtab Held tutoring hours for students and graded homeworks
+
+
 %Tutor, Upward Bound at Harvey Mudd College, Claremont CA  \>9/12 -5/13 \\
 %\customtab Worked with underprivileged high school students to cultivate study skills necessary to reach and \\ \customtabinline succeed in college \\
 \end{flushleft}
 
 
 % Leadership 
-\flushleft {\textbf{LEADERSHIP} Girls Who Code Lead Instructor  \vb Blood Drive Coordinator \vb Tech Summer Camp Instructor 
+\begin{flushleft}
+\wrapTitle{ACTIVITIES}
+\normalsize
+ Red Cross Campus Blood Drive  Coordinator
+ \vb W-ACM Chapter Campus Representative
+ \vb Dorm Social Representative
+\end{flushleft}
 % Fun
 %\flushleft {\textbf{Other interests} Chemistry \vb Linguistics \vb Cross-Country Running \vb Gymnastics \vb Springboard Diving
 %\vb Student Council Exec. Assistant
