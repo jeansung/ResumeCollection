@@ -1,8 +1,7 @@
  % Jean Sung
 % Resume Template / Master Resume 
 
-\documentclass[11.5pt]{article}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\documentclass[11pt]{article}
 \usepackage[margin= 0.5 in]{geometry}
 \usepackage{hyperref}
 \usepackage{fix-cm}
@@ -16,12 +15,8 @@
 \newcommand{\tildeText}{\raise.17ex\hbox{$\scriptstyle\sim$}}
 \newcommand{\websitedisplaytext}{\large http://cs.hmc.edu/\tildeText jsung }
 \newcommand{\website}{\href{http://cs.hmc.edu/~jsung}{\websitedisplaytext}}
-\newcommand{\tag}{Passion for building software tools to better hanlde data analytics. }
+\newcommand{\tag}{\textit{Passion for building software tools to better hanlde data analytics. }}
 \newcommand{\wrapTitle}[1]{{\sectionNL \textbf{\Large #1}} \sectionNL}
-
-% Address 
-%\newcommand{\addrA}{\small 340 E. Foothill Blvd, }
-%\newcommand{\addrB}{\small Claremont, CA 91711 }
 
 
 % shortcuts 
@@ -35,9 +30,9 @@
 \newcommand{\rightAlign}{\hfill}
 
 % Spring 2016 clean up:
-% Replace sum plus plus with new dsl related project
-% 
-
+% Update new DSL project 
+% Update your clinic description
+% Actually delete all the old stuff? Getting ready for the real world!! 
 \begin{document}
 
 % Contact Information 
@@ -46,6 +41,7 @@
 \phone  
 \vb\email 
 \vb\website \\
+%\tag \\
 \hrulefill
 \end{center}
 
@@ -64,22 +60,22 @@ B.S. Computer Science - Major GPA: 3.5   \\
 
 % Relevant Coursework
 \begin{flushleft}
-\wrapTitle{COURSEWORK}
+\wrapTitle{SELECTED COURSEWORK}
+Algorithms \& Advanced Algorithms
+\vb Domain Specific Languages 
+\vb Software Development \\
 Interaction Design 
-\vb Public Speaking
-\vb Advanced Algorithms 
 \vb Artificial Intelligence 
-\vb Domain Specific Languages \\
-Data Structures 
-\vb Digital Electronics \& Comp. Engineering
+\vb Data Structures 
+\vb Digital Electronics \& Comp. Engineering \\
+Linear Algebra \& Differential. Eqs. II
 \vb Image Processing  
-\vb Linear Algebra \& Diff. Eqs. II
-
+\vb Public Speaking
+\vb Discrete Mathematics
 
 
 % \& Program Development
 % \vb Programming Practicum \\
-% \vb Software Development
 % \vb Computability \& Logic
 % \vb Systems Engineering
 % \vb Discrete Mathematics
@@ -120,9 +116,9 @@ Data Structures
 % Experience
 \begin{flushleft}
 \wrapTitle{EXPERIENCE}
-\textbf{Software Engineer}, Facebook, Seattle, WA \rightAlign \textbf{Aug. 2016} \\
+\textbf{Software Engineer}, Facebook, Seattle, WA \rightAlign \textbf{Starting Aug. 2016} \\
 \textbf{Algorithms Researcher}, HMC \rightAlign \textbf{May 2016 - Aug. 2016} \\
-\textbf{Project Manager for Real-Time Data Analysis System}, Laserfiche-HMC Clinic \rightAlign \textbf{Sept. 2015 - May 2016} \\ 
+\textbf{Project Manager}, Laserfiche-HMC Clinic \rightAlign \textbf{Sept. 2015 - May 2016} \\ 
 \customtab Building a data warehouse system to handle flexible unstructured data \\
 \customtab Developing trend analysis algorithms to work across different types of data \\
 \customtab Responsible for maintaining scope of project as project manager (Fall Semester)\\
@@ -130,10 +126,10 @@ Data Structures
 \customtab Conducted feasibility research on a price prediction model that resulted in saved company resources \\
 \customtab Designed, implemented, tracked results for several experiments involving novel ways of arranging the site \\
 
-\textbf{Educational iPad App Developer}, \HMC \rightAlign \textbf{May 2013 - Aug. 2013} \\
-\customtab Re-factored, added new features to, and published educational iPad apps for middle school students \\
-\customtab Primary game, Hammy Coaster available at \url{https://itunes.apple.com/app/hammycoaster/id674765438} \\
-\customtab Presented work at the \textit{Celebration of Women in Computing in Southern California Conference }
+%\textbf{Educational iPad App Developer}, \HMC \rightAlign \textbf{May 2013 - Aug. 2013} \\
+%\customtab Re-factored, added new features to, and published educational iPad apps for middle school students \\
+%\customtab Primary game, Hammy Coaster available at \url{https://itunes.apple.com/app/hammycoaster/id674765438} \\
+%\customtab Presented work at the \textit{Celebration of Women in Computing in Southern California Conference }
 \end{flushleft}
 
 
@@ -147,6 +143,12 @@ Data Structures
 % CS Projects
 \begin{flushleft}
 \wrapTitle{PROJECTS}
+
+% Describe Spring 2016 Research
+\textbf{Model Driving Creation} (\url{https://github.com/jeansung/DSLResearch}) \rightAlign \textbf{Jan. 2016 - May 2016} \\
+\customtab Creating an application to embed simple math models in text documents with an interactive component \\
+\customtab Wrote a wrapper for Tangle JS library to increase usability by non programmers \\
+
 \textbf{Sum Plus Plus} (\url{http://jeansung.github.io/SumPlusPlus/}) \rightAlign \textbf{Sept. 2014 - Dec. 2014} \\
 \customtab Created a domain specific language to more cleanly express weighed sums with custom constraints \\
 \customtab Designed a translation suite for English rules to Excel formulas \\
@@ -154,7 +156,7 @@ Data Structures
 \textbf{Pipe Dream!} (\url{https://itunes.apple.com/us/app/pipe-dream!/id947630499})  \rightAlign \textbf{Sept. 2014 - Dec. 2014} \\
 \customtab Created an educational iPad game to teach middle school students about computer security\\
 \customtab Gained experience in agile development process, teamwork, architecture design and user testing \\
-\customtab Winner of the 2015 Computer Science Department Wing Tam Award for Best Software Development Project 
+\customtab Winner of the 2015 Computer Science Dept. Wing Tam Award for Best Software Development Project 
 
 
 %\textbf{Wake Me When}\\
@@ -175,20 +177,19 @@ Data Structures
 
 
 % Additional Experience 
-\begin{flushleft}
-\wrapTitle{ADDITIONAL EXPERIENCE}
-\textbf{Volunteer Lead Instructor for Girls Who Code} \rightAlign \textbf{Sept. 2014 - May 2016} \\ 
-\customtab Preparing and teaching weekly lessons on CS fundamentals for 20 middle school students\\
-\textbf{Computer Science Grader and Tutor}, \HMC \rightAlign\textbf{ Sept. 2013 - May 2016} \\ 
-\customtab Current: Algorithms \\
-\customtab Past semesters: Principles of CS, Data Structures, Software Development, Domain Specific Languages \\
-\textbf{Intern for Office of Institutional Diversity}, \HMC \rightAlign \textbf{Sept. 2014 - May 2015} \\
-\customtab Initiated and implemented office task automation projects\\
-\customtab Streamlined the RSVP system with Google Apps, saving one hour of staff time per event  \\
-\customtab Helped plan events that promoted awareness of social justice issues \\
+%\begin{flushleft}
+%\wrapTitle{ADDITIONAL EXPERIENCE}
+%\textbf{Volunteer Lead Instructor for Girls Who Code} \rightAlign \textbf{Sept. 2014 - May 2016} \\ 
+%\customtab Preparing and teaching weekly lessons on CS fundamentals for 15 middle school students\\
+%\textbf{Computer Science Grader and Tutor}, \HMC \rightAlign\textbf{ Sept. 2013 - May 2016} \\ 
+%\customtab Current: Algorithms \\
+%\customtab Past semesters: Principles of CS, Data Structures, Software Development, Domain Specific Languages \\
 
-
-
+% OID Year! 
+%\textbf{Intern for Office of Institutional Diversity}, \HMC \rightAlign \textbf{Sept. 2014 - May 2015} \\
+%\customtab Initiated and implemented office task automation projects\\
+%\customtab Streamlined the RSVP system with Google Apps, saving one hour of staff time per event  \\
+%\customtab Helped plan events that promoted awareness of social justice issues \\
 
 % idTech Summer
 %\textbf{Java and Scratch Programming Instructor}, iD Tech Summer Camps \rightAlign \textbf{Aug. 2014}\\
@@ -197,17 +198,29 @@ Data Structures
 % Upward Bound Tutor
 %Tutor, Upward Bound at Harvey Mudd College, Claremont CA  \>9/12 -5/13 \\
 %\customtab Worked with underprivileged high school students to cultivate study skills necessary to reach and \\ \customtabinline succeed in college \\
-\end{flushleft}
+%\end{flushleft}
 
 
-% Leadership 
+
 \begin{flushleft}
-\wrapTitle{ACTIVITIES}
+\wrapTitle{EXTRACURRICULARS}
 \normalsize
- Red Cross Campus Blood Drive  Coordinator
- \vb W-ACM Chapter Campus Representative
- \vb Dorm Social Representative
+Girls Who Code Lead Instructor
+ \vb Algorithms Grader \& Tutor
+ \vb Rock Climbing
+ \vb Gymnastics
+ \vb Hiking
 \end{flushleft}
+
+%\begin{flushleft}
+%\wrapTitle{ACTIVITIES}
+%\normalsize
+% Red Cross Campus Blood Drive  Coordinator
+% \vb W-ACM Chapter Campus Representative
+% \vb Dorm Social Representative
+%\end{flushleft}
+
+
 
 % Fun
 %\flushleft {\textbf{Other interests} Chemistry \vb Linguistics \vb Cross-Country Running \vb Gymnastics \vb Springboard Diving
